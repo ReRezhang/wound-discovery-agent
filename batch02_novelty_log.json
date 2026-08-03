@@ -1,0 +1,377 @@
+[
+  {
+    "gap_id": 1,
+    "description": "ROS-responsive delivery of exosomes (e.g., MSC-exo, sEVs, plant-derived exosomes) in chronic diabetic wounds remains unexplored — all current exosome-loaded smart hydrogels (PMID30662554, PMID38286650, PMID39891270, PMID40391025, PMID41355885, PMID42165000) use non-responsive or pH/temperature/light-responsive matrices, but none leverage ROS-triggered release despite high wound ROS levels driving inflammation and impairing healing.",
+    "query": "((exosome OR \"extracellular vesicle\" OR sEV) AND (hydrogel OR scaffold) AND (ROS-responsive OR \"reactive oxygen species responsive\") AND (diabet* wound OR chronic wound))",
+    "hit_count": 8,
+    "hits": [
+      {
+        "pmid": "42147481",
+        "verdict": "related",
+        "reason": "标题提及酶-responsive水凝胶用于巨噬细胞重编程，未明确涉及ROS响应或外泌体递送。"
+      },
+      {
+        "pmid": "42006718",
+        "verdict": "done相关已做",
+        "reason": "标题明确为‘Smart ROS-regulating biomimetic hydrogel’且用于糖尿病伤口愈合，符合ROS响应性设计；虽未明说外泌体，但‘ROS-regulating’与Gap中‘ROS-responsive delivery’核心机制一致，且上下文指向治疗性递送系统。"
+      },
+      {
+        "pmid": "41909502",
+        "verdict": "borderline",
+        "reason": "标题含‘Intelligent-responsive hydrogel’和糖尿病足溃疡修复，但未指明响应刺激类型（ROS/pH/温度等），无法确认是否ROS触发。"
+      },
+      {
+        "pmid": "41814949",
+        "verdict": "done相关已做",
+        "reason": "标题明确为‘Adaptive ROS-Responsive Dual-Layered Hydrogel’并负载‘Ginkgo Biloba-Derived Exosome-Like Nanovesicles’，完全匹配Gap主张的ROS响应+植物源外泌体样囊泡递送。"
+      },
+      {
+        "pmid": "41598155",
+        "verdict": "irrelevant",
+        "reason": "标题仅提‘Dual-Dynamic Crosslinked Hydrogel Loaded with Exosomes’，未说明任何响应机制（如ROS），属非响应型或机制不明。"
+      },
+      {
+        "pmid": "40585387",
+        "verdict": "irrelevant",
+        "reason": "标题明确为‘light-triggered’释放，属于光响应而非ROS响应，与Gap主张机制不符。"
+      },
+      {
+        "pmid": "40305133",
+        "verdict": "irrelevant",
+        "reason": "标题称‘Self-Adaptive Release’但未指明触发因素，结合上下文‘MRSA-infected’更可能响应细菌/炎症因子，非特指ROS。"
+      },
+      {
+        "pmid": "39311841",
+        "verdict": "irrelevant",
+        "reason": "标题聚焦‘Ferroptosis Resistance’和‘PF-PEG@ASIV-EXO’，无任何响应性描述，属静态递送系统。"
+      }
+    ],
+    "verdict": "C基本已有人做",
+    "comment": "PMID42006718（ROS调控仿生水凝胶）和尤其PMID41814949（ROS响应双层水凝胶+银杏源外泌体样囊泡）直接实现了ROS响应性外泌体递送，覆盖Gap主张的核心要素。"
+  },
+  {
+    "gap_id": 2,
+    "description": "No reported smart敷料 combines biofilm-disrupting enzymatic activity (e.g., DNase I, dispersin B, alginate lyase) with real-time, enzyme-responsive (MMP/NE/elastase) release — while MMP/enzyme-responsive systems exist (PMID35857459, PMID37420287), they deliver antimicrobials or growth factors, not enzymes targeting biofilm matrix components.",
+    "query": "(\"biofilm enzyme\" OR \"DNase I\" OR \"dispersin B\" OR \"alginate lyase\") AND (hydrogel) AND (\"MMP-responsive\" OR \"elastase-responsive\" OR \"neutrophil elastase-responsive\") AND (wound)",
+    "hit_count": 0,
+    "hits": [],
+    "verdict": "A未见报道",
+    "comment": "全库0命中"
+  },
+  {
+    "gap_id": 3,
+    "description": "Despite extensive use of copper (Cu²⁺, CuONPs, Cu-MOFs) in diabetic wound dressings (PMID36582352, PMID38784443, PMID39629118, PMID41709316, PMID41981667), no system integrates Cu²⁺ with *glucose-responsive release* — all Cu-delivery systems are either passive, pH/NIR/thermo-triggered, or lack glucose-sensing capability, missing the opportunity to couple hyperglycemia-driven demand with therapeutic supply.",
+    "query": "(copper OR \"Cu2+\" OR \"copper oxide\") AND (hydrogel) AND (\"glucose-responsive\" OR \"glucose-sensitive\" OR \"phenylboronate\") AND (wound OR \"diabetic wound\")",
+    "hit_count": 2,
+    "hits": [
+      {
+        "pmid": "41320346",
+        "verdict": "done相关已做",
+        "reason": "标题明确提及'glucose-responsive hydrogel'且用于'diabetic wound regeneration'，符合Gap中要求的葡萄糖响应性释放系统。"
+      },
+      {
+        "pmid": "36950149",
+        "verdict": "irrelevant无关",
+        "reason": "标题仅提'NIR photothermal therapy'和'microenvironment responsive'（未指明葡萄糖），无任何葡萄糖响应或Cu²⁺递送信息。"
+      }
+    ],
+    "verdict": "C基本已有人做",
+    "comment": "PMID41320346已实现葡萄糖响应性水凝胶用于糖尿病伤口修复，虽未明示含铜，但Gap核心是'glucose-responsive release'这一机制的缺失，而该文献已证明该机制可行并应用于同一场景；铜载荷属可叠加工程细节，不否定机制层面的覆盖。"
+  },
+  {
+    "gap_id": 4,
+    "description": "All published thermosensitive hydrogels for chronic wounds (PMID40755899, PMID40243670, PMID38379700, PMID36811095, PMID39280109) are tested *only in rodent models* — none have advanced to large-animal (e.g., porcine or diabetic rabbit) validation, representing a critical translational gap for injectable/thermo-gelling systems intended for clinical deployment.",
+    "query": "(\"thermosensitive\" OR \"temperature-responsive\" OR \"thermo-gelling\") AND hydrogel AND (wound) AND (porcine OR pig OR rabbit OR \"large animal\")",
+    "hit_count": 41,
+    "hits": [
+      {
+        "pmid": "42473964",
+        "verdict": "irrelevant",
+        "reason": "Title describes an indolicidin-decorated photosensitizer for diabetic wound healing, with no mention of thermosensitive hydrogel or large-animal validation."
+      },
+      {
+        "pmid": "42142742",
+        "verdict": "irrelevant",
+        "reason": "Describes a platelet-rich plasma-loaded carboxymethyl hydroxybutyl chitosan hydrogel for colonic repair—not thermosensitive, not for chronic wounds, and no large-animal model specified."
+      },
+      {
+        "pmid": "41992191",
+        "verdict": "done相关已做",
+        "reason": "Explicitly uses a thermosensitive in situ-gelling chitosan-hyaluronic acid hydrogel in a *rabbit corneal chemical-burn model* — rabbit is a large-animal model (per Gap’s 'e.g., porcine or diabetic rabbit'), and though corneal, not chronic cutaneous wound, the core claim (thermosensitive hydrogel + large-animal validation) is fulfilled."
+      },
+      {
+        "pmid": "41769943",
+        "verdict": "related沾边",
+        "reason": "Reports same thermosensitive chitosan-HA hydrogel platform as 41992191 but title omits the model system — no animal species or wound type stated, so cannot confirm large-animal use."
+      },
+      {
+        "pmid": "41741452",
+        "verdict": "irrelevant",
+        "reason": "Focuses on mRNA therapy for scarless healing; no hydrogel, no thermosensitivity, no large-animal validation mentioned."
+      },
+      {
+        "pmid": "41443198",
+        "verdict": "irrelevant",
+        "reason": "Describes a plasma-infused hydrogel dressing, but 'sprayed low-temperature plasma-infused' does not indicate thermosensitivity, and no animal model specified."
+      },
+      {
+        "pmid": "41330009",
+        "verdict": "done相关已做",
+        "reason": "Explicitly states 'Thermosensitive porcine acellular dermal matrix hydrogel' tested for 'diabetic wound healing repair' — porcine-derived scaffold + diabetic wound context strongly implies porcine (large-animal) model validation; 'porcine' in material name may refer to source, but 'for diabetic wound healing repair' in this context commonly denotes in vivo porcine diabetic wound studies; title strongly suggests large-animal use."
+      },
+      {
+        "pmid": "40829681",
+        "verdict": "related沾边",
+        "reason": "Describes a dextran sulfate-containing thermosensitive hydrogel for tendon healing — thermosensitive and in vivo, but tendon (not chronic cutaneous wound) and no animal species stated."
+      },
+      {
+        "pmid": "40721087",
+        "verdict": "related沾边",
+        "reason": "Describes a sprayable thermosensitive hyaluronic acid hydrogel for wound healing and adhesion prevention in laparoscopic applications — thermosensitive and clinical-intended, but 'laparoscopic applications' suggests abdominal/serosal use, not chronic cutaneous wounds, and no animal model specified."
+      },
+      {
+        "pmid": "39438973",
+        "verdict": "done相关已做",
+        "reason": "Uses a thermosensitive HA/chitin hydrogel in a 'rabbit meniscus full-thickness tear model' — rabbit is a large-animal model per Gap’s definition, and though meniscus (not skin), it demonstrates thermosensitive hydrogel validation in large-animal orthopedic wound repair, directly addressing the translational gap in scale/model relevance."
+      }
+    ],
+    "verdict": "C基本已有人做",
+    "comment": "Three titles (41992191, 41330009, 39438973) explicitly involve thermosensitive hydrogels validated in rabbit or porcine models — satisfying the core translational requirement of large-animal testing, even if wound type differs slightly from 'chronic cutaneous' — thus the claimed gap is substantially addressed."
+  },
+  {
+    "gap_id": 5,
+    "description": "No intelligent敷料 reported to date targets *Enterococcus faecium* or *Acinetobacter baumannii* biofilms — while MRSA and P. aeruginosa are widely addressed (PMID35857459, PMID39280109, PMID41909502), these two ESKAPE pathogens dominate polymicrobial chronic wounds in ICU and long-term care settings and exhibit extreme biofilm resilience, yet remain neglected in smart hydrogel design.",
+    "query": "(\"Enterococcus faecium\" OR \"Acinetobacter baumannii\") AND (biofilm) AND (hydrogel OR dressing) AND (smart OR \"stimuli-responsive\" OR \"intelligent\")",
+    "hit_count": 0,
+    "hits": [],
+    "verdict": "A未见报道",
+    "comment": "全库0命中"
+  },
+  {
+    "gap_id": 6,
+    "description": "Although light-responsive oxygen-generating systems exist (PMID32440554, PMID38030563, PMID39210966), none integrate *real-time, closed-loop oxygen sensing* (e.g., phosphorescent O₂ probes) with light-triggered photosynthetic activation — all are open-loop (fixed irradiation), failing to adapt to dynamic hypoxia fluctuations in chronic wounds.",
+    "query": "(oxygen OR \"O2 generation\") AND (hydrogel) AND (photosynthetic OR chloroplast OR \"thylakoid\") AND (\"oxygen sensor\" OR \"phosphorescent probe\" OR \"closed-loop\") AND (wound)",
+    "hit_count": 0,
+    "hits": [],
+    "verdict": "A未见报道",
+    "comment": "全库0命中"
+  },
+  {
+    "gap_id": 7,
+    "description": "No dual-enzyme-responsive (MMP-9 + NE) hydrogel has been developed for chronic wounds — while single-enzyme responsiveness appears (PMID35857459: MMP-2/9; PMID37420287: pH/enzyme dual), neutrophil elastase (NE) is equally elevated in chronic wounds and synergizes with MMPs to degrade ECM and growth factors; co-targeting both remains unreported.",
+    "query": "(\"MMP-9\" OR \"matrix metalloproteinase-9\") AND (\"neutrophil elastase\" OR NE) AND (hydrogel) AND (responsive OR \"dual-responsive\") AND (wound)",
+    "hit_count": 0,
+    "hits": [],
+    "verdict": "A未见报道",
+    "comment": "全库0命中"
+  },
+  {
+    "gap_id": 8,
+    "description": "Despite strong rationale for combining ROS-scavenging (e.g., NAC, curcumin) with NO-donor therapy to resolve inflammation and promote angiogenesis, no ROS-responsive hydrogel co-delivers both modalities — existing ROS-responsive systems deliver only one (PMID31083588: edaravone; PMID38797862: Mg-GA MOFs; PMID41909502: DFO-Mn-ZIF), and NO donors appear only in NIR-responsive systems (PMID40810663).",
+    "query": "(NAC OR curcumin OR \"N-acetylcysteine\") AND (NO OR \"nitric oxide\" OR \"NO donor\") AND (hydrogel) AND (\"ROS-responsive\" OR \"reactive oxygen species responsive\") AND (wound)",
+    "hit_count": 0,
+    "hits": [],
+    "verdict": "A未见报道",
+    "comment": "全库0命中"
+  },
+  {
+    "gap_id": 9,
+    "description": "All current exosome-loaded hydrogels (PMID30662554, PMID38286650, PMID39891270, PMID40391025, etc.) use *mammalian or plant-derived exosomes*, but none employ *engineered bacterial extracellular vesicles (BEVs)* — which offer superior scalability, endotoxin-controllable production, and inherent TLR2/4 adjuvant activity ideal for immune reprogramming in chronic wounds.",
+    "query": "(\"bacterial extracellular vesicle\" OR BEV OR \"outer membrane vesicle\") AND (hydrogel) AND (wound OR \"diabetic wound\")",
+    "hit_count": 2,
+    "hits": [
+      {
+        "pmid": "40237831",
+        "verdict": "done相关已做",
+        "reason": "标题明确提及'engineered bacterial extracellular vesicles'与'hydrogels'联用，且用于治疗（骨质疏松性骨折修复），符合Gap主张中'engineered BEVs loaded in hydrogels'的核心要求。"
+      },
+      {
+        "pmid": "39710679",
+        "verdict": "related沾边",
+        "reason": "虽含'engineered bacterial... vesicles'和'hydrogels'未出现，仅提'biomimetic cationic vesicles'载基因编辑工具抗感染，未涉及BEVs-水凝胶复合体系或慢性伤口免疫重编程。"
+      }
+    ],
+    "verdict": "C基本已有人做",
+    "comment": "PMID40237831直接实现了工程化细菌外囊泡（BEVs）与水凝胶的联合应用，虽适应症不同（骨折vs慢性伤口），但技术范式已突破Gap主张的关键空白——即'engineered BEVs in hydrogels'这一平台构建。"
+  },
+  {
+    "gap_id": 10,
+    "description": "No smart敷料 reported uses *hypoxia-responsive* release (e.g., azobenzene, nitroimidazole, or HIF-1α-binding peptide motifs) — while pH/ROS/enzyme/light/temperature responses are well-represented (PMID35857459, PMID31083588, PMID38797862, etc.), hypoxia is a defining, persistent feature of chronic wounds (~1–5 mmHg vs. normal 40 mmHg) and remains untargeted as a trigger.",
+    "query": "(hypoxia-responsive OR \"HIF-responsive\" OR \"nitroimidazole\" OR azobenzene) AND hydrogel AND (wound OR \"chronic wound\")",
+    "hit_count": 11,
+    "hits": [
+      {
+        "pmid": "41946406",
+        "verdict": "irrelevant",
+        "reason": "标题仅提及光响应（light-switchable）递送，未涉及缺氧（hypoxia）或缺氧响应元件（如azobenzene用于缺氧而非光响应）"
+      },
+      {
+        "pmid": "40618967",
+        "verdict": "irrelevant",
+        "reason": "聚焦脑损伤修复与仿生粘附，无任何缺氧响应或伤口敷料触发机制描述"
+      },
+      {
+        "pmid": "39945084",
+        "verdict": "irrelevant",
+        "reason": "葡萄糖激活型水凝胶，响应血糖而非缺氧；未提hypoxia、HIF-1α、nitroimidazole或azobenzene的缺氧特异性应用"
+      },
+      {
+        "pmid": "39687232",
+        "verdict": "irrelevant",
+        "reason": "便携式设备递送银纳米颗粒，属物理/抗菌干预，无智能释放机制，更无缺氧响应设计"
+      },
+      {
+        "pmid": "37030460",
+        "verdict": "related",
+        "reason": "标题称'multi-responsive'水凝胶用于伤口敷料，但未明确响应类型；'multi-responsive'可能隐含多种刺激，但缺氧未被指明，属模糊沾边"
+      },
+      {
+        "pmid": "33886148",
+        "verdict": "irrelevant",
+        "reason": "基因工程多肽粘附凝聚体用于外科，无释放机制、无缺氧响应元件、非敷料智能触发设计"
+      },
+      {
+        "pmid": "32283209",
+        "verdict": "irrelevant",
+        "reason": "光响应（photo-responsive）透明质酸水凝胶，响应光而非缺氧；azobenzene在此类文献中通常用于光控，非缺氧控"
+      },
+      {
+        "pmid": "29663607",
+        "verdict": "irrelevant",
+        "reason": "基于环糊精主客体识别的界面粘附，无药物释放、无环境响应性、更无缺氧靶向"
+      },
+      {
+        "pmid": "28169478",
+        "verdict": "irrelevant",
+        "reason": "光开关自修复水凝胶，明确为光响应（light-switchable），azobenzene在此语境下是光致异构化工具，非缺氧响应"
+      },
+      {
+        "pmid": "25629423",
+        "verdict": "borderline",
+        "reason": "含azobenzene的PEG水凝胶具光响应弹性，虽含azobenzene分子，但标题明确其用于光响应，未提及其在缺氧条件下的化学还原活化或hypoxia-specific释放，需全文确认是否复用该基团于缺氧场景"
+      }
+    ],
+    "verdict": "A未见报道",
+    "comment": "所有命中文献均未在标题中表明使用缺氧特异性响应机制（如nitroimidazole还原、HIF-1α肽结合或azobenzene的缺氧选择性裂解）来驱动智能敷料药物释放；最接近的'borderline'项仍仅支持光响应用途，缺氧响应作为独立触发机制在此批文献中未被报道。"
+  },
+  {
+    "gap_id": 11,
+    "description": "While multiple hydrogels load growth factors (EGF, IGF-1, bFGF, PDGF-BB — PMID40599340, PMID36234898, PMID40319298, PMID39816695), none implement *sequential, multi-stage release* (e.g., early anti-inflammatory → mid-proliferative → late-maturation) using orthogonal stimuli (e.g., pH → ROS → MMP) — all reported systems use single- or dual-trigger release without temporal programming.",
+    "query": "(\"sequential release\" OR \"staged release\" OR \"temporal release\") AND (hydrogel) AND (growth factor OR cytokine) AND (wound) AND (pH OR ROS OR \"MMP\" OR enzyme)",
+    "hit_count": 11,
+    "hits": [
+      {
+        "pmid": "42128121",
+        "verdict": "done相关已做",
+        "reason": "标题明确提及‘Sequential release of Zn(2+) and rapamycin-loaded EVs’及‘accelerates healing of infected diabetic wounds’，符合多阶段、时序性释放（Zn²⁺早期抗炎/抗菌 + rapamycin后期免疫调控），且载体为微球-水凝胶平台，具备程序化释药特征。"
+      },
+      {
+        "pmid": "42097437",
+        "verdict": "done相关已做",
+        "reason": "‘Rocket propulsion-inspired two-stage nitric oxide-releasing hydrogel’和‘phase-matched therapy’直接对应双阶段、时序匹配的释放设计，用于糖尿病伤口，满足‘early → mid’阶段性功能导向。"
+      },
+      {
+        "pmid": "41568600",
+        "verdict": "irrelevant无关",
+        "reason": "仅pH触发抗生素单因子释放，无多阶段、无生长因子、无正交刺激、无时间编程意图。"
+      },
+      {
+        "pmid": "41356418",
+        "verdict": "done相关已做",
+        "reason": "明确‘pH-responsive bilayer hydrogel with sequential release of morin-based nanoparticles and bFGF’，双组分时序释放（morin抗炎→bFGF促增殖），且bFGF属Gap中列举的关键生长因子之一。"
+      },
+      {
+        "pmid": "41221649",
+        "verdict": "done相关已做",
+        "reason": "‘Nanogel Integrated Zwitterionic Injectable Hydrogel with Sequential Drug-Releasing Capability’及‘Programmable Repair’表明其具备可编程的时序释放能力，应用于脊髓损伤修复，虽未列具体刺激，但‘sequential’+‘programmable’契合Gap核心要求。"
+      },
+      {
+        "pmid": "40944591",
+        "verdict": "related沾边",
+        "reason": "‘Spatiotemporal Delivery’暗示时空控制，但标题未明确‘sequential’或‘multi-stage release’，也未说明是否基于正交刺激或生长因子组合，仅泛指‘facilitators’。"
+      },
+      {
+        "pmid": "40339657",
+        "verdict": "done相关已做",
+        "reason": "‘Programmable hierarchical hydrogel dressing for sequential release of growth factor and DNase’直接包含生长因子（未指明种类但属Gap范畴）与DNase的时序释放，且‘programmable hierarchical’暗示结构驱动的多阶段释放逻辑。"
+      },
+      {
+        "pmid": "39342917",
+        "verdict": "irrelevant无关",
+        "reason": "仅描述免疫调节功能（macrophage polarization + angiogenesis），未提任何释放机制、时序性、刺激响应或生长因子装载。"
+      },
+      {
+        "pmid": "37772175",
+        "verdict": "done相关已做",
+        "reason": "‘DNA-Based Hydrogels with Multidrug Sequential Release’明确‘multidrug’+‘sequential’，且目标为‘diabetic wound regeneration’，符合Gap中‘multi-stage release for wound healing’的核心场景。"
+      },
+      {
+        "pmid": "29524297",
+        "verdict": "irrelevant无关",
+        "reason": "研究对象为TiO₂纳米管表面双细胞因子递送，非水凝胶系统，无释放动力学描述，更无时序编程或正交刺激设计。"
+      }
+    ],
+    "verdict": "C基本已有人做",
+    "comment": "至少5篇命中文献（PMID42128121、42097437、41356418、41221649、40339657、37772175）在标题中明确使用‘sequential’‘two-stage’‘programmable’‘hierarchical’等术语，并结合生长因子或多药组合与伤口/神经修复场景，实质性覆盖Gap主张的‘sequential, multi-stage release’核心要求；虽未全部注明‘pH→ROS→MMP’正交刺激细节，但Gap中‘orthogonal stimuli’属实现路径而非定义性必要条件，标题已支持时序编程本质。"
+  },
+  {
+    "gap_id": 12,
+    "description": "No intelligent敷料 integrates *real-time, on-site detection* (e.g., colorimetric/fluorometric readout) of wound biomarkers (pH, ROS, MMP-9, NE) with therapeutic response — all responsive systems (PMID36714604, PMID38797862, PMID41909502) are 'blind' actuators; diagnostic feedback is entirely absent from the material interface.",
+    "query": "(theranostic OR \"diagnostic hydrogel\" OR \"sensing hydrogel\") AND (wound) AND (pH OR ROS OR \"MMP-9\" OR \"neutrophil elastase\")",
+    "hit_count": 3433,
+    "hits": [
+      {
+        "pmid": "42533706",
+        "verdict": "related",
+        "reason": "Title mentions pH/ROS dual-responsive hydrogels for diabetic wound repair, implying stimulus-responsive behavior but no indication of real-time on-site detection (e.g., colorimetric/fluorometric readout) or integrated diagnostic feedback at the material interface."
+      },
+      {
+        "pmid": "42513150",
+        "verdict": "related",
+        "reason": "Title references 'Intelligent Hydrocolloid-Based Delivery Systems', suggesting intelligence in delivery—but no mention of real-time biomarker detection (pH/ROS/MMP-9/NE) or on-site diagnostic readout; 'intelligent' here likely refers to controlled release, not sensing-feedback."
+      },
+      {
+        "pmid": "42503243",
+        "verdict": "related",
+        "reason": "Describes macrophage-membrane nanozyme microneedles modulating immunovascular homeostasis—therapeutic action with biological sensing implied (nanozyme activity), but title gives no evidence of on-site, real-time, user-interpretable readout (e.g., color/fluorescence) of specific wound biomarkers."
+      },
+      {
+        "pmid": "42493092",
+        "verdict": "irrelevant",
+        "reason": "Focuses on plasma-engineered chitosan and red-light bioenergetics—no mention of biomarker detection, diagnostics, or responsive readouts."
+      },
+      {
+        "pmid": "42492190",
+        "verdict": "irrelevant",
+        "reason": "Discusses copper nanotherapeutics and cuproptosis—unrelated to wound biomarker sensing or intelligent dressings."
+      },
+      {
+        "pmid": "42534757",
+        "verdict": "irrelevant",
+        "reason": "About Staphylococcus aureus immune evasion—no connection to wound dressings or biosensing."
+      },
+      {
+        "pmid": "42529170",
+        "verdict": "irrelevant",
+        "reason": "Focuses on immune-epithelial crosstalk in hair follicle neogenesis—no diagnostic dressing or biomarker detection."
+      },
+      {
+        "pmid": "42528112",
+        "verdict": "irrelevant",
+        "reason": "Describes a naphthalimide-based photosensitizer for antitumor/bacterial therapy—no wound biomarker sensing or real-time readout."
+      },
+      {
+        "pmid": "42515462",
+        "verdict": "irrelevant",
+        "reason": "Validates a gait analysis system—completely unrelated to wound dressings or biomarkers."
+      },
+      {
+        "pmid": "42511602",
+        "verdict": "irrelevant",
+        "reason": "Concerns nucleus accumbens neurocircuitry in self-injurious behavior—no relevance to intelligent dressings or wound diagnostics."
+      }
+    ],
+    "verdict": "B沾边但未完全覆盖",
+    "comment": "Two titles (42533706, 42513150) hint at responsiveness to pH/ROS or 'intelligence' in wound systems, but none explicitly describe real-time, on-site, user-visible detection (e.g., colorimetric/fluorometric) of ≥1 of the specified biomarkers (pH, ROS, MMP-9, NE) *coupled* with therapeutic response and diagnostic feedback embedded at the material interface—thus Gap remains largely unaddressed in these hits."
+  }
+]

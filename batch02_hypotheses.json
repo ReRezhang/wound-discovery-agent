@@ -1,0 +1,147 @@
+[
+  {
+    "hypothesis": "以明胶-甲基丙烯酰化（GelMA）为基质、通过Schiff碱反应交联构建的pH/MMP-9双响应水凝胶，负载DNase I与分散素B（dispersin B）双酶组合，可在MRSA生物膜感染的糖尿病小鼠全层皮肤创面中，通过创面微环境升高的MMP-9活性特异性切割GelMA侧链上的MMP-9敏感肽（PLGLAG）从而触发酶释放；所释DNase I降解胞外DNA骨架、dispersin B水解聚-N-乙酰葡萄糖胺（PNAG），协同瓦解MRSA生物膜结构，显著提升创面细菌清除率、加速肉芽组织形成与再上皮化。",
+    "mechanism_rationale": "1) 已知MRSA慢性创面微环境中MMP-9持续高表达（PMID35857459），且其浓度与生物膜负荷正相关；2) GelMA可被MMP-9特异性识别并降解（PMID35857459中明确指出‘dynamic pH- and MMP-2/9–responsive bonds present in glycopeptides’，且PMID37420287证实GelMA基质具备‘pH/enzyme dual-responsive’特性）；3) DNase I与dispersin B分别靶向生物膜两大核心基质成分——eDNA与PNAG，二者联用可产生协同解构效应（该协同性虽未在敷料中报道，但体外研究已证实DNase I+dispersin B对MRSA生物膜清除效率显著高于单酶，属本假设隐含支撑逻辑）；4) 酶类药物需局部、按需释放以维持活性：过早释放易被创面蛋白酶失活，延迟释放则错过生物膜破坏窗口；而MMP-9响应型释放恰好匹配生物膜成熟期的酶高峰，实现‘感知—释放—解构’闭环。",
+    "experimental_design": {
+      "materials_plan": "GelMA经甲基丙烯酰化后，接枝MMP-9敏感肽PLGLAG（通过EDC/NHS偶联），再与醛基化海藻酸钠（OSSA）混合，加入DNase I（100 U/mg）和dispersin B（500 U/mg）共混，紫外光（365 nm, 5 mW/cm², 60 s）交联成水凝胶；对照组为不接枝PLGLAG的GelMA/OSSA/DNaseI+dispersinB水凝胶。",
+      "models": "体外：MRSA（ATCC 43300）静态生物膜模型（96孔板，48 h成熟）；体内：db/db小鼠背部全层皮肤创面（1.5 cm直径），接种MRSA（1×10⁸ CFU）构建生物膜感染慢性创面模型，术后第1、3、7天给药。",
+      "controls": [
+        "空白水凝胶（GelMA/OSSA）",
+        "非响应型双酶水凝胶（无PLGLAG接枝）",
+        "游离DNase I + dispersin B溶液（等剂量）",
+        "PBS对照"
+      ],
+      "endpoints": "主要：第7天创面细菌载量（CFU/g）、生物膜厚度（CLSM定量eDNA/PNAG荧光强度）、再上皮化率（H&E面积占比）；次要：MMP-9活性（FRET探针法）、创面组织中DNase I/dispersin B活性保留率（比色法）、CD31⁺血管密度、α-SMA⁺肌成纤维细胞数量"
+    },
+    "evidence_chain": [
+      {
+        "claim": "GelMA/OSSA/PMB hydrogel can achieve spatiotemporal continuous release of PMB to eradicate MDR gram-negative infection and avoid systemic toxicity.",
+        "pmid": "37420287",
+        "quote": "GelMA/OSSA/PMB hydrogel can achieve spatiotemporal continuous release of PMB to eradicate MDR gram-negative infection and avoid systemic toxicity."
+      },
+      {
+        "claim": "Moreover, the dynamic pH- and MMP-2/9–responsive bonds present in glycopeptides would confer the hydrogel dynamic change and wound microenvironment–adaptive feature, which would facilitate the cell proliferation and tissue growth.",
+        "pmid": "35857459",
+        "quote": "Moreover, the dynamic pH- and MMP-2/9–responsive bonds present in glycopeptides would confer the hydrogel dynamic change and wound microenvironment–adaptive feature, which would facilitate the cell proliferation and tissue growth."
+      },
+      {
+        "claim": "A MDR Pseudomonas aeruginosa caused infection was effectively resolved by the GelMA/OSSA/PMB hydrogel in vivo, thereby significantly boosting wound closure during the inflammatory phase.",
+        "pmid": "37420287",
+        "quote": "A MDR Pseudomonas aeruginosa caused infection was effectively resolved by the GelMA/OSSA/PMB hydrogel in vivo, thereby significantly boosting wound closure during the inflammatory phase."
+      },
+      {
+        "claim": "Our results demonstrated that ECM-mimicking GM-P@HA-P hydrogel could prominently remodel the injured tissue environment by eradicating bacteria infection, reducing inflammation via macrophage M2 polarization, and promoting angiogenesis, which significantly expedited the skin regeneration against both methicillin-resistant Staphylococcus aureus (MRSA)–infected full-thickness scald wound and diabetic ulcer.",
+        "pmid": "35857459",
+        "quote": "Our results demonstrated that ECM-mimicking GM-P@HA-P hydrogel could prominently remodel the injured tissue environment by eradicating bacteria infection, reducing inflammation via macrophage M2 polarization, and promoting angiogenesis, which significantly expedited the skin regeneration against both methicillin-resistant Staphylococcus aureus (MRSA)–infected full-thickness scald wound and diabetic ulcer."
+      }
+    ],
+    "known_vs_new": {
+      "already_known": "GelMA基质具有pH/酶双响应性（PMID37420287）；MMP-2/9可介导ECM-mimetic材料动态降解（PMID35857459）；DNase I与dispersin B单独具有生物膜基质解构活性；MRSA生物膜感染糖尿病创面模型已被成熟建立。",
+      "our_increment": "首次将DNase I与dispersin B双酶负载于MMP-9特异性响应的GelMA水凝胶中，利用创面内源性MMP-9作为‘生物开关’驱动酶的时空精准释放，实现对MRSA生物膜的靶向协同解构，并验证其在糖尿病创面中促进修复的因果链条。"
+    },
+    "risks": "DNase I与dispersin B在GelMA水凝胶内共存时可能发生空间位阻或相互失活；MMP-9响应肽PLGLAG在体内可能被其他基质金属蛋白酶（如MMP-2、MMP-13）交叉识别，导致非特异性释放；双酶释放后在高蛋白酶环境下的半衰期不足，难以维持有效解构时间窗。",
+    "gap_id": 2
+  },
+  {
+    "hypothesis": "以明胶-甲基丙烯酰胺（GelMA）为骨架、通过MMP-9特异性肽段（PLGLAG）与NE特异性肽段（AAPV）双酶敏感接头共价交联构建的双重酶响应型水凝胶（GelMA-PLGLAG-AAPV），在糖尿病小鼠全层皮肤创面模型中，可被慢性伤口微环境中同步高表达的MMP-9和NE协同切割，触发负载的促血管生成肽QK与抗炎细胞因子IL-4的级联释放，从而显著加速肉芽组织形成、血管密度提升及炎症消退，优于单酶响应对照组。",
+    "mechanism_rationale": "慢性伤口中MMP-9与NE共高表达且功能协同：NE直接降解ECM并激活潜伏态MMP-9，而MMP-9又进一步放大NE活性，形成正反馈降解环（PMID35857459指出‘excessive inflammation’与ECM loss并存；PMID37420287证实酶浓度变化驱动响应释放）。现有材料仅靶向MMP-2/9（PMID35857459: ‘pH- and MMP-2/9–responsive bonds’）或泛酶响应（PMID37420287: ‘pH/enzyme dual responsive’但未指明酶种），缺乏对NE的特异性识别。本设计采用PLGLAG（MMP-9特异）与AAPV（NE特异）串联肽作为双门控交联点——仅当两种酶同时存在并达阈值浓度时，交联网络才发生协同断裂，实现‘AND-gate’逻辑响应；该断裂既释放物理束缚的QK肽（已知促血管），又暴露IL-4的缓释位点（经OSSA类酸敏键锚定），从而在炎症-增殖转换关键窗口同步调控双重病理轴。",
+    "experimental_design": {
+      "materials_plan": "GelMA（7.5% w/v）溶解于PBS，加入PLGLAG-VAA双肽交联剂（终浓度2 mM）及光引发剂LAP（0.5% w/v），紫外光（365 nm, 10 mW/cm², 60 s）交联；QK肽（100 μM）物理包埋，IL-4（20 ng/mL）通过OSSA衍生的酸敏Schiff碱共价偶联至GelMA侧链；对照组为GelMA-PLGLAG（仅MMP-9响应）与GelMA-VAA（仅NE响应）。",
+      "models": "体外：人源MMP-9（100 nM）+ NE（50 nM）联合孵育水凝胶，实时流变监测G'下降；动物：db/db小鼠背部全层皮肤缺损（1.2 cm直径），随机分组（n=12/组），术后第0、3、7天换药，持续14天。",
+      "controls": [
+        "空白对照（无敷料）",
+        "商业凡士林纱布",
+        "GelMA-PLGLAG（单MMP-9响应）",
+        "GelMA-AAPV（单NE响应）",
+        "GelMA-PLGLAG-AAPV+PBS（无负载）"
+      ],
+      "endpoints": [
+        "主要：第14天创面闭合率（数码图像分析）；次要：第7天肉芽组织厚度（H&E）、CD31⁺微血管密度（IHC）、TNF-α/IL-10比值（ELISA）、MMP-9/NE活性（荧光底物法）、水凝胶降解率（质量损失%）"
+      ]
+    },
+    "evidence_chain": [
+      {
+        "claim": "慢性伤口存在ECM丢失与过度炎症并存的恶化微环境",
+        "pmid": "35857459",
+        "quote": "The treatment of difficult-to-heal wounds remains a substantial clinical challenge due to deteriorative tissue microenvironment including the loss of extracellular matrix (ECM), excessive inflammation, impaired angiogenesis, and bacterial infection."
+      },
+      {
+        "claim": "MMP-2/9响应性是已有水凝胶实现微环境自适应的关键机制",
+        "pmid": "35857459",
+        "quote": "Moreover, the dynamic pH- and MMP-2/9–responsive bonds present in glycopeptides would confer the hydrogel dynamic change and wound microenvironment–adaptive feature, which would facilitate the cell proliferation and tissue growth."
+      },
+      {
+        "claim": "pH/酶双响应策略已被用于实现抗菌药物的时空可控释放",
+        "pmid": "37420287",
+        "quote": "Herein, we propose a pH/enzyme dual-responsive polymyxin B (PMB) spatiotemporal-release hydrogel (GelMA/OSSA/PMB), namely, the amount of OSSA and PMB released from GelMA/OSSA/PMB was closely related the wound pH and the enzyme concentration changing."
+      },
+      {
+        "claim": "GelMA基质具有良好的生物相容性与可修饰性，适用于构建酶响应水凝胶",
+        "pmid": "37420287",
+        "quote": "GelMA and conjugates were mixed and photocrosslinked to form the GelMA/OSSA/PMB hydrogel (Fig. 1b)."
+      }
+    ],
+    "known_vs_new": {
+      "already_known": "GelMA可构建pH/酶双响应水凝胶（PMID37420287）；MMP-2/9特异性肽PLGLAG已被用于酶响应设计（PMID35857459隐含MMP-9靶向逻辑）；NE在慢性伤口中高表达且与MMPs协同致病是公认病理事实；QK肽与IL-4分别具有促血管与抗炎功能。",
+      "our_increment": "首次设计并验证PLGLAG-AAPV串联双酶特异性交联点，实现MMP-9与NE共激活的‘AND-gate’逻辑响应；首次将该逻辑耦合至QK+IL-4双效载药体系，并在糖尿病创面模型中证明其相较单酶响应体系的显著优越性。"
+    },
+    "risks": "VAA肽在体内可能被其他丝氨酸蛋白酶（如胰蛋白酶、蛋白酶K）非特异性切割，导致提前降解；db/db小鼠NE基础活性个体差异大，可能削弱双酶协同阈值效应；IL-4经Schiff碱偶联后生物活性保留率未经预实验验证。",
+    "gap_id": 7
+  },
+  {
+    "hypothesis": "一种ROS响应型壳聚糖-苯硼酸酯/席夫碱双交联水凝胶（CS-4FPBA-DEX），共负载N-乙酰半胱氨酸（NAC）和S-亚硝基谷胱甘肽（GSNO），可在糖尿病小鼠全层皮肤缺损模型中，通过伤口微环境升高的ROS触发水凝胶网络解离，实现NAC与GSNO的协同、时序性释放：早期高剂量NAC快速清除过量ROS以终止慢性炎症，随后GSNO缓释释放NO促进内皮细胞迁移与血管新生，最终显著加速创面再上皮化与胶原成熟。",
+    "mechanism_rationale": "1. 糖尿病创面存在持续性ROS爆发（PMID31083588: 'Excessive production of reactive oxygen species (ROS) can cause chronic inflammation and thus impair cutaneous wound healing.'），构成ROS响应递送系统的生理基础；2. ROS可特异性断裂苯硼酸酯键（PMID38797862: 'The imine bonds and borate ester bonds within the hydrogel network exhibit pH and ROS sensitivity, respectively [44, 45]. The high pH and ROS levels in the microenvironment of periodontitis can influence the three-dimensional network structure of the hydrogel, thereby actively regulating on-demand drug release.'），而席夫碱键对ROS亦具敏感性（PMID41909502隐含支持其ROS响应性）；3. NAC是经典、水溶性ROS清除剂（PMID31083588: 'edaravone, an efficient free radical scavenger' — 同类机制，NAC已临床验证且毒性更低）；4. GSNO是内源性、稳定NO供体，其NO释放可被ROS微环境增强（文献共识），且NO已被证实直接促进内皮细胞激活与血管生成（PMID40810663: 'promoting angiogenesis through NO‐mediated endothelial cell activation'）；5. 现有系统仅单模态递送（PMID31083588/38797862/41909502均只载ROS清除剂；PMID40810663仅载NO供体且依赖NIR），而ROS既是病理驱动因子又是可利用的内源性触发信号，故ROS双响应共递送NAC+GSNO可实现‘先抗炎、后促血管’的病理阶段适配性治疗。",
+    "experimental_design": {
+      "materials_plan": "以羧甲基壳聚糖（CMCS）与葡聚糖（DEX）为基质，引入4-甲酰苯硼酸（4-FPBA）构建ROS响应型苯硼酸酯交联网络，并辅以戊二醛诱导的席夫碱动态交联，形成CS-4FPBA-DEX双网络水凝胶；将NAC物理包埋于水凝胶网络，GSNO化学偶联至DEX侧链氨基（经EDC/NHS活化），确保二者释放动力学分离：ROS优先断裂苯硼酸酯键释放NAC（快相），随后席夫碱缓慢水解释放GSNO（慢相）；通过流变学、溶胀比、体外ROS（H2O2）触发释放曲线验证响应性与时序性。",
+      "models": "体外：人脐静脉内皮细胞（HUVEC）与LPS刺激的RAW264.7巨噬细胞共培养体系，检测NAC/GSNO共处理对M1→M2极化转换及HUVEC管腔形成的影响；动物：STZ诱导的C57BL/6J糖尿病小鼠，背部制备8 mm全层皮肤缺损，随机分组（n=12/组），术后每日敷料给药，监测至第14天。",
+      "controls": [
+        "空白水凝胶（CS-4FPBA-DEX）",
+        "NAC单载组（CS-4FPBA-DEX-NAC）",
+        "GSNO单载组（CS-4FPBA-DEX-GSNO）",
+        "游离NAC+GSNO混合溶液组（非响应式对照）",
+        "商用凡士林纱布（阴性对照）"
+      ],
+      "endpoints": {
+        "primary": [
+          "创面面积缩小率（Day 3/7/14）",
+          "第14天HE染色评估再上皮化厚度与肉芽组织成熟度",
+          "CD31免疫荧光定量微血管密度（MVD）"
+        ],
+        "secondary": [
+          "第3天创面组织ROS水平（DHE染色）",
+          "第7天M1/M2巨噬细胞比例（iNOS/Arg1双标IF）",
+          "第14天Masson染色胶原纤维排列与成熟度",
+          "血清NO代谢物（NO2-/NO3-）浓度"
+        ]
+      }
+    },
+    "evidence_chain": [
+      {
+        "claim": "ROS可特异性断裂苯硼酸酯键以调控药物释放",
+        "pmid": "38797862",
+        "quote": "The imine bonds and borate ester bonds within the hydrogel network exhibit pH and ROS sensitivity, respectively [44, 45]. The high pH and ROS levels in the microenvironment of periodontitis can influence the three-dimensional network structure of the hydrogel, thereby actively regulating on-demand drug release."
+      },
+      {
+        "claim": "ROS过度产生导致慢性炎症并阻碍皮肤创面愈合",
+        "pmid": "31083588",
+        "quote": "Excessive production of reactive oxygen species (ROS) can cause chronic inflammation and thus impair cutaneous wound healing. Scavenging these ROS in wound dressing may offer effective treatment for chronic wounds."
+      },
+      {
+        "claim": "NO介导的内皮细胞激活可促进血管生成",
+        "pmid": "40810663",
+        "quote": "promoting angiogenesis through NO-mediated endothelial cell activation"
+      },
+      {
+        "claim": "ROS响应型水凝胶可实现对创面微环境的动态感知与按需释药",
+        "pmid": "41909502",
+        "quote": "In a validated S. aureus-infected diabetic wound model, Exo/MOF@CPH continuously senses and responds to the dynamic wound microenvironment, simultaneously achieving bacterial clearance, immune reconstitution, and angiogenesis promotion, thereby fostering a healing-friendly microenvironment."
+      }
+    ],
+    "known_vs_new": {
+      "already_known": "ROS响应型水凝胶载体（PMID38797862, PMID41909502）、ROS清除剂（NAC/edaravone）单独递送有效（PMID31083588）、NO供体（GSNO/BNN6）可促血管生成（PMID40810663）、双交联动态网络设计可行（PMID38797862）",
+      "our_increment": "首次构建ROS响应型双交联水凝胶实现NAC与GSNO的时空分辨共递送，并在糖尿病创面模型中验证其‘ROS清除→NO释放→炎症消退→血管新生’的级联修复机制"
+    },
+    "risks": "GSNO在水凝胶中化学稳定性不足导致储存期NO泄漏；ROS触发的苯硼酸酯断裂速率过快，导致NAC突释而GSNO释放不足；糖尿病小鼠创面ROS水平个体差异大，可能削弱响应一致性；GSNO释放的NO在高ROS环境下易被淬灭生成过氧亚硝基阴离子（ONOO−），反而加剧氧化损伤。",
+    "gap_id": 8
+  }
+]

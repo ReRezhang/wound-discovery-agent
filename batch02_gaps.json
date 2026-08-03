@@ -1,0 +1,172 @@
+[
+  {
+    "gap_id": 1,
+    "description": "ROS-responsive delivery of exosomes (e.g., MSC-exo, sEVs, plant-derived exosomes) in chronic diabetic wounds remains unexplored — all current exosome-loaded smart hydrogels (PMID30662554, PMID38286650, PMID39891270, PMID40391025, PMID41355885, PMID42165000) use non-responsive or pH/temperature/light-responsive matrices, but none leverage ROS-triggered release despite high wound ROS levels driving inflammation and impairing healing.",
+    "type": "机制空白",
+    "supporting_pmids": [
+      "30662554",
+      "38286650",
+      "39891270",
+      "40391025",
+      "41355885",
+      "42165000"
+    ],
+    "rationale": "ROS is a dominant, persistent feature of chronic diabetic wounds (>10× physiological levels), yet no study couples exosome payload with ROS-cleavable linkers (e.g., thioketal, boronic ester, arylboronate) for on-demand, inflammation-activated release. This represents a missed opportunity for spatiotemporal immunomodulation precisely where and when it’s needed.",
+    "feasibility": "高",
+    "novelty_query": "((exosome OR \"extracellular vesicle\" OR sEV) AND (hydrogel OR scaffold) AND (ROS-responsive OR \"reactive oxygen species responsive\") AND (diabet* wound OR chronic wound))"
+  },
+  {
+    "gap_id": 2,
+    "description": "No reported smart敷料 combines biofilm-disrupting enzymatic activity (e.g., DNase I, dispersin B, alginate lyase) with real-time, enzyme-responsive (MMP/NE/elastase) release — while MMP/enzyme-responsive systems exist (PMID35857459, PMID37420287), they deliver antimicrobials or growth factors, not enzymes targeting biofilm matrix components.",
+    "type": "负载空白",
+    "supporting_pmids": [
+      "35857459",
+      "37420287"
+    ],
+    "rationale": "Biofilms in chronic wounds are structurally reinforced by eDNA, polysaccharides, and proteins; yet current enzyme-responsive hydrogels release effectors that act *on cells*, not *on the biofilm scaffold*. Co-loading and enzyme-triggered release of biofilm-degrading enzymes would enable autonomous, microenvironment-activated biofilm clearance — a critical unmet need for MRSA/P. aeruginosa-infected chronic wounds.",
+    "feasibility": "中",
+    "novelty_query": "(\"biofilm enzyme\" OR \"DNase I\" OR \"dispersin B\" OR \"alginate lyase\") AND (hydrogel) AND (\"MMP-responsive\" OR \"elastase-responsive\" OR \"neutrophil elastase-responsive\") AND (wound)"
+  },
+  {
+    "gap_id": 3,
+    "description": "Despite extensive use of copper (Cu²⁺, CuONPs, Cu-MOFs) in diabetic wound dressings (PMID36582352, PMID38784443, PMID39629118, PMID41709316, PMID41981667), no system integrates Cu²⁺ with *glucose-responsive release* — all Cu-delivery systems are either passive, pH/NIR/thermo-triggered, or lack glucose-sensing capability, missing the opportunity to couple hyperglycemia-driven demand with therapeutic supply.",
+    "type": "机制空白",
+    "supporting_pmids": [
+      "36582352",
+      "38784443",
+      "39629118",
+      "41709316",
+      "41981667"
+    ],
+    "rationale": "Chronic hyperglycemia directly impairs angiogenesis and macrophage function; glucose-responsive Cu²⁺ release would allow dose escalation precisely under high-glucose conditions (e.g., via phenylboronate–cis-diol binding), enhancing pro-angiogenic and antimicrobial effects only when pathologically relevant — a feedback-controlled therapeutic strategy absent in current literature.",
+    "feasibility": "高",
+    "novelty_query": "(copper OR \"Cu2+\" OR \"copper oxide\") AND (hydrogel) AND (\"glucose-responsive\" OR \"glucose-sensitive\" OR \"phenylboronate\") AND (wound OR \"diabetic wound\")"
+  },
+  {
+    "gap_id": 4,
+    "description": "All published thermosensitive hydrogels for chronic wounds (PMID40755899, PMID40243670, PMID38379700, PMID36811095, PMID39280109) are tested *only in rodent models* — none have advanced to large-animal (e.g., porcine or diabetic rabbit) validation, representing a critical translational gap for injectable/thermo-gelling systems intended for clinical deployment.",
+    "type": "转化空白",
+    "supporting_pmids": [
+      "40755899",
+      "40243670",
+      "38379700",
+      "36811095",
+      "39280109"
+    ],
+    "rationale": "Thermosensitive gels rely on precise sol–gel transition kinetics near body temperature; porcine skin thickness, perfusion, and wound contraction dynamics differ markedly from rodents. Absence of large-animal data prevents assessment of clinical feasibility (e.g., retention time, mechanical integrity under movement, dosing accuracy), stalling regulatory pathway development.",
+    "feasibility": "中",
+    "novelty_query": "(\"thermosensitive\" OR \"temperature-responsive\" OR \"thermo-gelling\") AND hydrogel AND (wound) AND (porcine OR pig OR rabbit OR \"large animal\")"
+  },
+  {
+    "gap_id": 5,
+    "description": "No intelligent敷料 reported to date targets *Enterococcus faecium* or *Acinetobacter baumannii* biofilms — while MRSA and P. aeruginosa are widely addressed (PMID35857459, PMID39280109, PMID41909502), these two ESKAPE pathogens dominate polymicrobial chronic wounds in ICU and long-term care settings and exhibit extreme biofilm resilience, yet remain neglected in smart hydrogel design.",
+    "type": "病原空白",
+    "supporting_pmids": [
+      "35857459",
+      "39280109",
+      "41909502"
+    ],
+    "rationale": "E. faecium forms ultra-dense, vancomycin-tolerant biofilms on necrotic tissue; A. baumannii produces copious extracellular polymeric substance (EPS) resistant to conventional antimicrobials. Their absence from smart敷料 studies reflects a clinically dangerous oversight — especially given rising multidrug resistance and association with non-healing surgical and pressure ulcers.",
+    "feasibility": "中",
+    "novelty_query": "(\"Enterococcus faecium\" OR \"Acinetobacter baumannii\") AND (biofilm) AND (hydrogel OR dressing) AND (smart OR \"stimuli-responsive\" OR \"intelligent\")"
+  },
+  {
+    "gap_id": 6,
+    "description": "Although light-responsive oxygen-generating systems exist (PMID32440554, PMID38030563, PMID39210966), none integrate *real-time, closed-loop oxygen sensing* (e.g., phosphorescent O₂ probes) with light-triggered photosynthetic activation — all are open-loop (fixed irradiation), failing to adapt to dynamic hypoxia fluctuations in chronic wounds.",
+    "type": "机制空白",
+    "supporting_pmids": [
+      "32440554",
+      "38030563",
+      "39210966"
+    ],
+    "rationale": "Chronic wound hypoxia is heterogeneous and dynamic (e.g., fluctuates with perfusion, infection burden, dressing occlusion); open-loop light delivery risks over-oxygenation (ROS burst) or under-oxygenation (inefficacy). A feedback-integrated system would maximize safety and efficacy — a key engineering gap preventing clinical translation of photobiomodulatory hydrogels.",
+    "feasibility": "中",
+    "novelty_query": "(oxygen OR \"O2 generation\") AND (hydrogel) AND (photosynthetic OR chloroplast OR \"thylakoid\") AND (\"oxygen sensor\" OR \"phosphorescent probe\" OR \"closed-loop\") AND (wound)"
+  },
+  {
+    "gap_id": 7,
+    "description": "No dual-enzyme-responsive (MMP-9 + NE) hydrogel has been developed for chronic wounds — while single-enzyme responsiveness appears (PMID35857459: MMP-2/9; PMID37420287: pH/enzyme dual), neutrophil elastase (NE) is equally elevated in chronic wounds and synergizes with MMPs to degrade ECM and growth factors; co-targeting both remains unreported.",
+    "type": "机制空白",
+    "supporting_pmids": [
+      "35857459",
+      "37420287"
+    ],
+    "rationale": "MMP-9 and NE are co-upregulated, interdependent proteases in diabetic wounds; NE activates pro-MMP-9, and both cleave collagen, fibronectin, and IGF-1. A hydrogel degradable *only* upon co-presence of both enzymes would provide unprecedented specificity for pathological (not physiological) remodeling zones — enabling precision delivery while avoiding premature degradation.",
+    "feasibility": "高",
+    "novelty_query": "(\"MMP-9\" OR \"matrix metalloproteinase-9\") AND (\"neutrophil elastase\" OR NE) AND (hydrogel) AND (responsive OR \"dual-responsive\") AND (wound)"
+  },
+  {
+    "gap_id": 8,
+    "description": "Despite strong rationale for combining ROS-scavenging (e.g., NAC, curcumin) with NO-donor therapy to resolve inflammation and promote angiogenesis, no ROS-responsive hydrogel co-delivers both modalities — existing ROS-responsive systems deliver only one (PMID31083588: edaravone; PMID38797862: Mg-GA MOFs; PMID41909502: DFO-Mn-ZIF), and NO donors appear only in NIR-responsive systems (PMID40810663).",
+    "type": "组合空白",
+    "supporting_pmids": [
+      "31083588",
+      "38797862",
+      "41909502",
+      "40810663"
+    ],
+    "rationale": "ROS and NO crosstalk critically regulates macrophage polarization (M1→M2) and endothelial function; simultaneous, co-localized, ROS-triggered release of both scavenger and NO donor would create a self-limiting anti-inflammatory–pro-angiogenic cascade — a synergistic mechanism validated in vitro but never engineered into an intelligent敷料 for chronic wounds.",
+    "feasibility": "高",
+    "novelty_query": "(NAC OR curcumin OR \"N-acetylcysteine\") AND (NO OR \"nitric oxide\" OR \"NO donor\") AND (hydrogel) AND (\"ROS-responsive\" OR \"reactive oxygen species responsive\") AND (wound)"
+  },
+  {
+    "gap_id": 9,
+    "description": "All current exosome-loaded hydrogels (PMID30662554, PMID38286650, PMID39891270, PMID40391025, etc.) use *mammalian or plant-derived exosomes*, but none employ *engineered bacterial extracellular vesicles (BEVs)* — which offer superior scalability, endotoxin-controllable production, and inherent TLR2/4 adjuvant activity ideal for immune reprogramming in chronic wounds.",
+    "type": "负载空白",
+    "supporting_pmids": [
+      "30662554",
+      "38286650",
+      "39891270",
+      "40391025",
+      "41355885",
+      "42165000"
+    ],
+    "rationale": "BEVs can be genetically programmed to carry wound-healing miRNAs, antimicrobial peptides, or anti-fibrotic cytokines, and their gram-negative origin provides built-in immunostimulatory signals to reverse chronic immune paralysis — a uniquely tunable, GMP-compatible platform absent from current smart敷料 literature.",
+    "feasibility": "中",
+    "novelty_query": "(\"bacterial extracellular vesicle\" OR BEV OR \"outer membrane vesicle\") AND (hydrogel) AND (wound OR \"diabetic wound\")"
+  },
+  {
+    "gap_id": 10,
+    "description": "No smart敷料 reported uses *hypoxia-responsive* release (e.g., azobenzene, nitroimidazole, or HIF-1α-binding peptide motifs) — while pH/ROS/enzyme/light/temperature responses are well-represented (PMID35857459, PMID31083588, PMID38797862, etc.), hypoxia is a defining, persistent feature of chronic wounds (~1–5 mmHg vs. normal 40 mmHg) and remains untargeted as a trigger.",
+    "type": "机制空白",
+    "supporting_pmids": [
+      "35857459",
+      "31083588",
+      "38797862",
+      "36714604",
+      "39210966"
+    ],
+    "rationale": "Hypoxia drives HIF-1α stabilization, which upregulates VEGF, SDF-1, and glycolytic enzymes — yet no hydrogel exploits this master regulator as a release trigger. Hypoxia-responsive systems would enable *endogenous biomarker-guided* delivery of angiogenic factors or metabolic modulators only within truly ischemic wound niches — maximizing therapeutic index and minimizing off-target effects.",
+    "feasibility": "中",
+    "novelty_query": "(hypoxia-responsive OR \"HIF-responsive\" OR \"nitroimidazole\" OR azobenzene) AND hydrogel AND (wound OR \"chronic wound\")"
+  },
+  {
+    "gap_id": 11,
+    "description": "While multiple hydrogels load growth factors (EGF, IGF-1, bFGF, PDGF-BB — PMID40599340, PMID36234898, PMID40319298, PMID39816695), none implement *sequential, multi-stage release* (e.g., early anti-inflammatory → mid-proliferative → late-maturation) using orthogonal stimuli (e.g., pH → ROS → MMP) — all reported systems use single- or dual-trigger release without temporal programming.",
+    "type": "组合空白",
+    "supporting_pmids": [
+      "40599340",
+      "36234898",
+      "40319298",
+      "39816695",
+      "35857459",
+      "37420287"
+    ],
+    "rationale": "Chronic wound healing failure stems from dysregulated phase progression (e.g., prolonged inflammation, stalled proliferation). A tri-stimuli-responsive hydrogel releasing IL-4/IL-10 first (pH-triggered), then EGF/bFGF (ROS-triggered), then decorin/TGF-β3 (MMP-triggered) would recapitulate physiological healing chronology — a systems-level design gap in current biomaterials.",
+    "feasibility": "中",
+    "novelty_query": "(\"sequential release\" OR \"staged release\" OR \"temporal release\") AND (hydrogel) AND (growth factor OR cytokine) AND (wound) AND (pH OR ROS OR \"MMP\" OR enzyme)"
+  },
+  {
+    "gap_id": 12,
+    "description": "No intelligent敷料 integrates *real-time, on-site detection* (e.g., colorimetric/fluorometric readout) of wound biomarkers (pH, ROS, MMP-9, NE) with therapeutic response — all responsive systems (PMID36714604, PMID38797862, PMID41909502) are 'blind' actuators; diagnostic feedback is entirely absent from the material interface.",
+    "type": "转化空白",
+    "supporting_pmids": [
+      "36714604",
+      "38797862",
+      "41909502"
+    ],
+    "rationale": "Clinical decision-making for chronic wounds relies on subjective assessment; integrating low-cost, visible biomarker sensing (e.g., ROS-sensitive dye + therapeutic release) would enable patient- or nurse-guided dressing changes and adaptive therapy — bridging the critical gap between smart materials and point-of-care diagnostics. No such theranostic hydrogel exists for chronic wounds.",
+    "feasibility": "高",
+    "novelty_query": "(theranostic OR \"diagnostic hydrogel\" OR \"sensing hydrogel\") AND (wound) AND (pH OR ROS OR \"MMP-9\" OR \"neutrophil elastase\")"
+  }
+]
